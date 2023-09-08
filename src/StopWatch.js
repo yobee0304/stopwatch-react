@@ -30,8 +30,8 @@ function StopWatch(){
             setValue("START");
         } else {
             const newIntervalId = setInterval(() => {
-                setCurTime(curTime => curTime + 1);
-            }, 1);
+                setCurTime(curTime => curTime + 10);
+            }, 10);
             setIntervalId(newIntervalId);
 
             setValue("STOP");
